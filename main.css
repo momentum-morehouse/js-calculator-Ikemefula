@@ -1,1 +1,59 @@
+#calculator {
+    width:400px;
+    height:500px;
+    margin: auto;
+    background-color: green;
+    border:60px solid lightgreen;
+}
 
+.dislpayAndConfig{
+    display: flex;
+    flex-direction: row;
+}
+
+.operand{
+    background: blue;
+    margin: 1px;
+    color: ;
+}
+/* Learn about border properties */
+/* use . for classes and # for id */
+.numberBoxes{
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+}
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: ;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: lightgreen;
+    border: 20px solid cyan;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    margin-top: 200px;
+    line-height: 150px;
+    color: blue;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+  }
