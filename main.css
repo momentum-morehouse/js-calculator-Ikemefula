@@ -13,8 +13,12 @@
 
 .operand{
     background: blue;
+    height: 100px;
     margin: 1px;
-    color: ;
+    color:whitesmoke ;
+    padding: 25px, 0;
+    font-size: 150%;
+    border-radius: 10px;
 }
 /* Learn about border properties */
 /* use . for classes and # for id */
