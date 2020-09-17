@@ -55,3 +55,6 @@
     flex-direction: row; 
     
 }
+.container {
+    display: flex; /* or inline-flex */
+  }
