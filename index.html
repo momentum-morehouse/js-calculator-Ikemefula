@@ -8,32 +8,63 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<script src="main.js">
 	</script>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
 </head>
 
-
 <body>
-<div id="calculator">
-	<div class="numberBoxes"></div>
-	<div class="numberBoxes"></div>
-	<div class="numberBoxes"></div>
-	<div class="numberBoxes"></div>
-	<div class="numberBoxes"></div>
+<!-- why did they use a form in this instance? -->
+	<form name="calculator">
+		<table>
+		   <tr>
+<!--research your tr tags-->
+<!-- The tr element represents a row of cells in a table -->
+			  <td colspan="4">
+				 <input type="text" name="display" id="display" disabled>
+				
+			  </td>
+		   </tr>
+		   <tr>
+				 <!-- this is my first row of numbers. How can i name it with a class or id tag instead of tr? -->
+				 <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+				 <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+				 <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+				 <!-- Im having trouble making this function work. Ask rebecca/mari how to implement division aspect -->
+				 <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+				 
+				 
+				 <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+		  </tr>
+		  <tr>
+				 <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+				 <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+				 <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+				 
+		  </tr>
+		  <tr>
+				 <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+				 
+				 <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+				 <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
 
-	<ul class="flex-container">
-		<li class="flex-item">1</li>
-		<li class="flex-item">2</li>
-		<li class="flex-item">3</li>
-		<li class="flex-item">4</li>
-		<li class="flex-item">5</li>
-		<li class="flex-item">6</li>
-	  </ul>
-	
+				 <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+		  </tr>
+		  <tr>
+				<td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+				 <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+				 <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+				 <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
 
-	  <div id= "2">
 
-	  </div>
-	</div>
-</div>
-<!
 
+
+
+				 <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+
+				 <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+				 <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+		   
+		   </tr>
+		</table>
+	 </form>
 </body>
