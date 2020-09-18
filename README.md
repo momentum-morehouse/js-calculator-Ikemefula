@@ -42,3 +42,6 @@ You should find the above project challenging. However, if you complete it, here
 * Add a button for calculating the modulo of two numbers.
 * Add a button for raising a number by a power.
 * Add parentheses to control the order of evaluation.
+// Operators vs operands
+operands - is what is being operated on 
+op
