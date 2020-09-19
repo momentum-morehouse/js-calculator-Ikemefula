@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    color: yellow;
+}
+head{
+
+}
+
+img{
+
+}
+
+.basic {
+    display: flex;
+    background-color: thistle;
+}
+
+.picture{
+   border: 5px solid turquoise;
+   border-radius: 5px;
+}
+#king {
+    text-align: center;
+}
