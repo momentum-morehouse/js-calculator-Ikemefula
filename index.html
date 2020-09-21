@@ -1,69 +1,62 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="main.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	<script src="main.js">
-	</script>
-	<link rel="stylesheet" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Comic+Neue:300,300italic,regular,italic,700,700italic" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!-- remember to add defer to the end of your script tag. this will make sure our script loads after our entire page is parsed. this is used for a better USER EXPERIENCE (UX) -->
+
+    <script src="main.js" async defer></script>
 </head>
 <body>
-<!-- why did they use a form in this instance? -->
-	<form name="calculator">
-		<table>
-		   <tr>
-<!--research your tr tags-->
-<!-- The tr element represents a row of cells in a table -->
-			  <td colspan="4">
-				 <input type="text" name="display" id="display" disabled>
-				
-			  </td>
-		   </tr>
-		   <tr>
-				 <!-- this is my first row of numbers. How can i name it with a class or id tag instead of tr? -->
-				 <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-				 <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
-				 <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-				 <!-- Im having trouble making this function work. Ask rebecca/mari how to implement division aspect -->
-				 <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
-				 
-				 
-				 <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
-		  </tr>
-		  <tr>
-				 <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
-				 <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
-				 <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
-				 
-		  </tr>
-		  <tr>
-				 <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-				 
-				 <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-				 <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
 
-				 <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
-		  </tr>
-		  <tr>
-				<td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
-				 <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
-				 <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
-				 <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+<!-- I need to lay out my calculator in separate div tags
+I want to add the different Calculator elements first -->
 
 
-
-
-
-				 <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
-
-				 <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
-				 <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
-		   
-		   </tr>
-		</table>
-	 </form>
+ <!-- I started with a single Div class to wrap everything
+// REMEMBER YOUR SYNTAX: 
+   //Div- tag, div, class or id, open qutation, name of div, close quotations, tag -->
+   <div class= "calculator-grid">
+       <div class= "output">
+          <div class="previous-operand">
+              <div class="current-operand">
+              
+              </div>
+            </div>
+       </div>
+       
+    </div>
+ 
+  
+<!-- to create my buttons, i created a button tag with a span two CLASS in order to make the AC button CSS SPAN length of two buttons. Refer back to The lesson that you utilized for your HTML portfolio button. -->
+    <button class="span-two">AC</button>
+    <button>DEL</button>
+    <button>÷</button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>-</button>
+    <button>.</button>
+    <button>0</button>
+    <button class="span-two">=</button>
+    
+    
+    
+    
+    
+    
+    
+</div>
+ 
 </body>
+
+</html>
