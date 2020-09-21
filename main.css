@@ -1,1 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+/* the second font will serve as a default font if FATFRANK does not load.  */
+    font-family: fatfrank, sans-serif; 
+    font-weight: normal;
+}
 
+body {
+    padding: 0;
+    margin: 0; 
+    background: linear-gradient(to right, #D3AB9E, #4EB09B);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
