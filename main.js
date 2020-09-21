@@ -5,7 +5,9 @@ class Calculator {
       this.currentOperandTextElement = currentOperandTextElement
       this.clear()
     }
-  
+//   what is .this? refer to site from Rebecca 
+// https://dev.to/momentum/what-is-this-in-javascript-3lc1
+
     clear() {
       this.currentOperand = ''
       this.previousOperand = ''
