@@ -4,7 +4,7 @@
     font-family: fatfrank, sans-serif; 
     font-weight: normal;
 }
-
+/* How is this different from flex box */
 body {
     padding: 0;
     margin: 0; 
@@ -27,7 +27,7 @@ body {
 
 
 
-  
+
   .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
